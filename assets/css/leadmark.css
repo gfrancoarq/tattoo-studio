@@ -12155,3 +12155,16 @@ textarea.form-control {
   margin: 4% auto 4% auto;
   border-radius: 8px;
 }
+
+.hello-icon {
+  width: 60px;
+  border-radius: 100px;
+  margin-bottom: 20px;
+}
+
+.title-section {
+  display: inline-block;
+  position: relative;
+  top: 10px;
+  left: 10px;
+}
