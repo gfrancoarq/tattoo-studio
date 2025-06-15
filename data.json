@@ -1,0 +1,59 @@
+{
+  "studioInfo": {
+    "name": "Punto Final Tattoo Studio",
+    "instagram": "https://www.instagram.com/puntofinalchile",
+    "contactEmail": "gfrancoarquitecto@gmail.com"
+  },
+  "portfolio": [
+    {
+      "title": "Dragón en Espalda Completa",
+      "description": "Proyecto de varias sesiones que abarca toda la espalda, con un diseño detallado de un dragón japonés.",
+      "imageUrl": "https://placehold.co/600x800/334155/f1f5f9?text=Espalda+Dragón",
+      "category": "Espalda"
+    },
+    {
+      "title": "Manga Floral y Geométrica",
+      "description": "Combinación de elementos botánicos con patrones geométricos para crear una manga completa y fluida.",
+      "imageUrl": "https://placehold.co/600x800/334155/f1f5f9?text=Manga+Floral",
+      "category": "Mangas"
+    },
+    {
+      "title": "Serpiente en la Pierna",
+      "description": "Una serpiente que envuelve la pierna desde el tobillo hasta el muslo, realizada en blackwork.",
+      "imageUrl": "https://placehold.co/600x800/334155/f1f5f9?text=Pierna+Serpiente",
+      "category": "Piernas"
+    },
+    {
+      "title": "Pecho Ornamental",
+      "description": "Diseño simétrico que cubre la zona del pecho con detalles ornamentales y de puntillismo.",
+      "imageUrl": "https://placehold.co/600x800/334155/f1f5f9?text=Pecho+Ornamental",
+      "category": "Pecho"
+    },
+    {
+      "title": "Mitología en el Muslo",
+      "description": "Representación de una escena mitológica con múltiples personajes, cubriendo gran parte del muslo.",
+      "imageUrl": "https://placehold.co/600x800/334155/f1f5f9?text=Muslo+Mitología",
+      "category": "Piernas"
+    },
+    {
+      "title": "Tigre Realista",
+      "description": "Retrato realista de un tigre en el antebrazo, parte de un proyecto de manga animal.",
+      "imageUrl": "https://placehold.co/600x800/334155/f1f5f9?text=Tigre+Antebrazo",
+      "category": "Mangas"
+    }
+  ],
+  "testimonials": [
+    {
+      "quote": "El nivel de detalle y profesionalismo es increíble. Franco captó mi idea para la espalda completa a la perfección. Todo el proceso con Mariela fue súper claro. ¡100% recomendados!",
+      "clientName": "Javier Rodriguez."
+    },
+    {
+      "quote": "Tenía miedo de empezar un proyecto tan grande como una manga, pero el equipo de Punto Final me dio toda la confianza. El resultado superó todas mis expectativas. Son secos.",
+      "clientName": "Valentina Soto."
+    },
+    {
+      "quote": "Desde la primera consulta hasta la última sesión, una experiencia impecable. Si buscan hacer un tatuaje grande y de calidad, este es el lugar. Gracias por todo.",
+      "clientName": "Martín Candia."
+    }
+  ]
+}
