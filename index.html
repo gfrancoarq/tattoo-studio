@@ -1,429 +1,276 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-	<meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Tatúate con confianza en Franco Ferrari Studio">
-    <meta name="author" content="Devcrud">
-    <title>Franco Ferrari Tattoo Studio</title>
-    <!-- font icons -->
-    <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
-    <!-- Bootstrap + LeadMark main styles -->
-	<link rel="stylesheet" href="assets/css/leadmark.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Punto Final Tattoo Studio - Tatuajes Profesionales</title>
+    <meta name="description" content="Estudio de tatuajes profesional en Santiago, especializado en proyectos de gran formato. Transformamos tu piel con tatuajes imponentes y diseños con carácter.">
+    
+    <!-- Tailwind CSS for styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <style>
+        /* Custom styles to apply the Inter font */
+        body {
+            font-family: 'Inter', sans-serif;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            background-color: #f8fafc; /* bg-slate-50 */
+        }
+        .hero-bg {
+            background-color: #1e293b; /* bg-slate-800 */
+            background-image: linear-gradient(to bottom, rgba(30, 41, 59, 0.7), rgba(30, 41, 59, 1)), url('https://placehold.co/1920x1080/1a1a1a/cccccc?text=Fondo+Tatuaje');
+            background-size: cover;
+            background-position: center;
+        }
+        .gallery-item {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .gallery-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+        }
+    </style>
 </head>
-<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
+<body class="text-slate-800">
 
-    <!-- page Navigation -->
-    <nav class="navbar custom-navbar navbar-expand-md navbar-light fixed-top" data-spy="affix" data-offset-top="10">
-        <div class="container">
-            <a class="navbar-brand" href="#">
-                <img src="assets/imgs/franco.png" alt="Estudio de Tatuajes">
-            </a>
-            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ml-auto">                     
-                    <li class="nav-item">
-                        <a class="nav-link" href="#portfolio">Portfolio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about">Franco</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#blog">Más Información</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contacto</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="agendar.html" class="ml-4 nav-link btn btn-primary btn-sm rounded">Agendar</a>
-                    </li>
-                </ul>
+    <!-- Navigation -->
+    <nav class="bg-white/80 backdrop-blur-md sticky top-0 z-50 shadow-sm">
+        <div class="container mx-auto max-w-7xl px-6">
+            <div class="flex justify-between items-center h-20">
+                <a href="#" class="text-2xl font-bold text-slate-900">Punto Final</a>
+                <div class="hidden md:flex items-center space-x-6">
+                    <a href="#portfolio" class="text-slate-600 hover:text-slate-900 transition">Portafolio</a>
+                    <a href="#about" class="text-slate-600 hover:text-slate-900 transition">El Estudio</a>
+                    <a href="#contact" class="text-slate-600 hover:text-slate-900 transition">Contacto</a>
+                    <a href="https://gfrancoarq.github.io/tattoo-studio/tyc.html" target="_blank" class="text-slate-600 hover:text-slate-900 transition">Términos</a>
+                </div>
+                 <a href="https://www.instagram.com/puntofinalchile" target="_blank" class="bg-slate-800 text-white px-4 py-2 rounded-lg font-semibold hover:bg-slate-700 transition">Agendar Cita</a>
             </div>
         </div>
     </nav>
-    <!-- End Of Second Navigation -->
 
-    <!-- Page Header -->
-    <header class="header">
-        <div class="overlay">
-            <h1 class="subtitle">Franco Ferrari Tattoo Studio</h1>
-
-<img src="https://readme-typing-svg.herokuapp.com?font=Poppins&size=55&duration=3000&pause=1000&color=F7F7F7&center=true&vCenter=true&width=600&height=90&lines=Bienvenid%40!" alt="Typing SVG" />
-            <!-- <h1 class="title">Bienvenid@!</h1>   -->
-        </div>  
-        <div class="shape">
-            <svg viewBox="0 0 1500 200">
-                <path d="m 0,240 h 1500.4828 v -71.92164 c 0,0 -286.2763,-81.79324 -743.19024,-81.79324 C 300.37862,86.28512 0,168.07836 0,168.07836 Z"/>
-            </svg>
-        </div>  
-        <div class="mouse-icon"><div class="wheel"></div></div>
+    <!-- Hero Section -->
+    <header id="home" class="hero-bg text-white">
+        <div class="container mx-auto max-w-7xl px-6 py-32 text-center">
+            <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight leading-tight">Transformamos tu piel con tatuajes imponentes.</h1>
+            <p class="mt-6 text-xl text-slate-300 max-w-3xl mx-auto">Diseños con carácter, como tú. Nos especializamos en proyectos de gran formato que cuentan una historia y definen un estilo.</p>
+            <div class="mt-10">
+                <a href="#portfolio" class="bg-white text-slate-900 px-8 py-4 rounded-lg font-bold text-lg hover:bg-slate-200 transition">Ver Proyectos</a>
+            </div>
+        </div>
     </header>
-    <!-- End Of Page Header -->
 
-    <!-- Service Section -->
-    <section  id="service" class="section pt-0">
-        <div class="container">
-            <h6 class="section-title text-center">AGENDA ABIERTA</h6>
-            <h6 class="section-subtitle text-center mb-5 pb-3">Bienvenid@ a mi universo de tatuajes elegantes y sofisticados. Me especializo en pequeños y detallados diseños que resaltan tu personalidad y estilo. ¡Ven a darle un toque sensual y sofisticado a tu piel! 🤩</h6>
-
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="card mb-4 mb-md-0">
-                        <div class="card-body">
-                            <small class="text-primary font-weight-bold">01</small>
-                            <h5 class="card-title mt-3"> Mascotas <h5>
-                            <img src="assets/imgs/mas-1.png" class="img-fluid" alt="">
-                            <hr>
-                            <p class="mb-0">Son tatuajes micro-realistas, pueden ser en negro sombreado, o con color, y se recomiendan de entre 5 y 10 cm.</p>
-                        </div>
+    <main>
+        <!-- About Section -->
+        <section id="about" class="py-20 md:py-28">
+            <div class="container mx-auto max-w-7xl px-6">
+                <div class="text-center">
+                    <h2 class="text-3xl md:text-4xl font-bold tracking-tight text-slate-900">Somos Punto Final Tattoo Studio</h2>
+                    <p class="mt-4 text-lg text-slate-600 max-w-3xl mx-auto">Un estudio profesional liderado por Franco y Mariela, dedicado a la creación de arte corporal único y de alta calidad. Con más de 1000 clientes satisfechos, nuestra pasión es convertir tus ideas en obras de arte duraderas.</p>
+                </div>
+                <div class="mt-16 grid md:grid-cols-2 gap-8 items-center">
+                    <div>
+                        <img src="https://placehold.co/600x400/334155/e2e8f0?text=Franco+y+Mariela" alt="Franco y Mariela en el estudio" class="rounded-lg shadow-lg w-full">
                     </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card mb-4 mb-md-0">
-                        <div class="card-body">
-                            <small class="text-primary font-weight-bold">02</small>
-                            <h5 class="card-title mt-3">Ornamentales<h5>
-                            <img src="assets/imgs/or-1.png" class="img-fluid" alt="">
-                            <hr>
-                            <p class="mb-0">Son tatuajes decorativos. Se incluyen los tatuajes botánicos, puntillismo, geométricos, lettering, entre otros.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card mb-4 mb-md-0">
-                        <div class="card-body">
-                            <small class="text-primary font-weight-bold">03</small>
-                            <h5 class="card-title mt-3">Acuarelas<h5>
-                            <img src="assets/imgs/acu-1.png" class="img-fluid" alt="">
-                            <hr>
-                            <p class="mb-0">Consiste en fusionar los colores de manera “acuosa”, simulando la transparencia de las acuarelas.</p>
-                        </div>
-                    </div>
-                </div>              
-            </div>
-        </div>
-    </section>
-    <!-- End OF Service Section -->
-
-    <!-- Portfolio Section -->
-    <section id="portfolio" class="section portfolio-section">
-        <div class="container">
-            <h6 class="section-title text-center">Portafolio</h6>
-            <h6 class="section-subtitle mb-5 text-center">Increíbles tatuajes para increíbles clientes. 
-                <br>
-                ¿Quieres ver más trabajos? Chequea nuestro <a href="https://www.instagram.com/franco.tatuador" target="_blank">
-                    Instagram</a></h6>
-                </a></h6>
-            <div class="filters">
-                <a href="#" data-filter=".new" class="active">
-                    Nuevos
-                </a>
-                <a href="#" data-filter=".mas">
-                    Mascotas
-                </a>
-                <a href="#" data-filter=".or">
-                    Ornamental
-                </a>
-                <a href="#" data-filter=".acu">
-                    Acuarela
-                </a>
-            </div>
-            <div class="portfolio-container"> 
-                <div class="col-md-6 col-lg-4 mas new">
-                    <div class="portfolio-item">
-                        <img src="assets/imgs/mas-2.png" class="img-fluid" alt="">
-                    </div>             
-                </div>
-                <div class="col-md-6 col-lg-4 or new">
-                    <div class="portfolio-item">
-                        <img src="assets/imgs/or-2.png" class="img-fluid" alt="">
-                    </div>             
-                </div>
-                <div class="col-md-6 col-lg-4 mas acu new">
-                    <div class="portfolio-item">
-                        <img src="assets/imgs/acu-2.png" class="img-fluid" alt="">
-                    </div>             
-                </div>
-                <div class="col-md-6 col-lg-4 mas new">
-                    <div class="portfolio-item">
-                        <img src="assets/imgs/mas-3.png" class="img-fluid" alt="">
-                    </div>             
-                </div>
-                <div class="col-md-6 col-lg-4 or new">
-                    <div class="portfolio-item">
-                        <img src="assets/imgs/or-3.png" class="img-fluid" alt="">
-                    </div>             
-                </div>
-                <div class="col-md-6 col-lg-4 acu new">
-                    <div class="portfolio-item">
-                        <img src="assets/imgs/acu-3.png" class="img-fluid" alt="">
-                    </div>             
-                </div>
-                <div class="col-md-6 col-lg-4 mas new">
-                    <div class="portfolio-item">
-                        <img src="assets/imgs/mas-4.png" class="img-fluid" alt="">
-                    </div>             
-                </div>
-                <div class="col-md-6 col-lg-4 or new">
-                    <div class="portfolio-item">
-                        <img src="assets/imgs/or-4.png" class="img-fluid" alt="">
-                    </div>             
-                </div>
-                <div class="col-md-6 col-lg-4 acu new">
-                    <div class="portfolio-item">
-                        <img src="assets/imgs/acu-4.png" class="img-fluid" alt="">
-                    </div>             
-                </div>
-                <div class="col-md-6 col-lg-4 mas new">
-                    <div class="portfolio-item">
-                        <img src="assets/imgs/mas-5.png" class="img-fluid" alt="">
-                    </div>             
-                </div>
-                <div class="col-md-6 col-lg-4 or new">
-                    <div class="portfolio-item">
-                        <img src="assets/imgs/or-5.png" class="img-fluid" alt="">
-                    </div>             
-                </div>
-                <div class="col-md-6 col-lg-4 or new">
-                    <div class="portfolio-item">
-                        <img src="assets/imgs/acu-5.png" class="img-fluid" alt="">
-                    </div>             
-                </div>
-                <div class="col-md-6 col-lg-4 mas new">
-                    <div class="portfolio-item">
-                        <img src="assets/imgs/mas-6.png" class="img-fluid" alt="">
-                    </div>             
-                </div>
-                <div class="col-md-6 col-lg-4 or new">
-                    <div class="portfolio-item">
-                        <img src="assets/imgs/or-7.png" class="img-fluid" alt="">
-                    </div>             
-                </div>
-                <div class="col-md-6 col-lg-4 acu new">
-                    <div class="portfolio-item">
-                        <img src="assets/imgs/acu-6.png" class="img-fluid" alt="">
-                    </div>             
-                </div>
-                <div class="col-md-6 col-lg-4 mas">
-                    <div class="portfolio-item">
-                        <img src="assets/imgs/mas-7.png" class="img-fluid" alt="">
-                    </div>             
-                </div>
-                <div class="col-md-6 col-lg-4 or">
-                    <div class="portfolio-item">
-                        <img src="assets/imgs/or-8.png" class="img-fluid" alt="">
-                    </div>             
-                </div>
-
-
-            </div>   
-        </div>            
-    </section>
-    <!-- End of portfolio section -->
-
-    <!-- Blog Section -->
-    <section class="section" id="blog">
-        <div class="container">
-            <h6 class="section-title mb-0 text-center">Información Importante</h6>
-            <h6 class="section-subtitle mb-5 text-center">Todo lo que debes saber, desde antes de agendar hasta después de tatuarte.</h6>
-
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="card border-0 mb-4">
-                        <a href="agendar.html"><img src="assets/imgs/blog-1.jpg" alt="" class="card-img-top w-100"></a>
-                        <div class="card-body">                         
-                            <a href="agendar.html"><h6 class="card-title">¿Cómo cotizar y agendar?</h6></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card border-0 mb-4">
-                        <a href="tyc.html"><img src="assets/imgs/blog-2.jpg" alt="" class="card-img-top w-100"></a>
-                        <div class="card-body">                         
-                            
-                            <a href="tyc.html"><h6 class="card-title"> Términos y Condiciones</h6></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card border-0 mb-4">
-                        <a href="cuidados.html"><img src="assets/imgs/blog-3.jpg" alt="" class="card-img-top w-100"></a>
-                        <div class="card-body">                         
-                            <a href="cuidados.html"><h6 class="card-title">Cuidados del Tatuaje</h6></a>
-                        </div>
+                    <div class="space-y-4 text-slate-700 leading-relaxed">
+                         <h3 class="text-2xl font-bold text-slate-900">Nuestra Filosofía</h3>
+                         <p>Creemos que cada tatuaje es una colaboración. Escuchamos tu visión y la combinamos con nuestra experiencia técnica y artística, especialmente en proyectos de gran escala que requieren una planificación y ejecución impecables. Nuestro compromiso es con la excelencia, la higiene y tu total satisfacción.</p>
+                         <p>Franco, el artista detrás de cada pieza, aporta años de experiencia y una vocación por el detalle, mientras que Mariela se encarga de que todo el servicio, desde la cotización hasta el cuidado final, sea perfecto.</p>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <!-- End of Blog Section -->
+        </section>
 
-    <!-- About Section -->
-    <section class="section" id="about">
-        <div class="container">
-            <div class="row justify-content-between">
-                <div class="col-md-6 pr-md-5 mb-4 mb-md-0">
-                    <img class="hello-icon" src="assets/imgs/wave.gif" alt="Hello icon">
-                    <div class="title-section">
-                        <h6 class="section-title mb-0">Hola!</h6>
-                        <h6 class="section-subtitle mb-4">Bienvenid@ a mi estudio privado.</h6>
-                    </div>
-                    <p><b>Soy Franco, Arquitecto de profesión y Tatuador por vocación. </b> </p>
-                    <img src="assets/imgs/about.jpg" alt="" class="w-100 mt-3 shadow-sm">
+        <!-- Portfolio Section -->
+        <section id="portfolio" class="py-20 md:py-28 bg-white">
+            <div class="container mx-auto max-w-7xl px-6">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-4xl font-bold tracking-tight text-slate-900">Portafolio de Proyectos</h2>
+                    <p class="mt-4 text-lg text-slate-600 max-w-3xl mx-auto">Explora una selección de nuestros trabajos de gran formato. Cada pieza es un testimonio de la confianza de nuestros clientes.</p>
                 </div>
-                <div class="col-md-6 pl-md-5">
-                    <div class="row">
-                        <div class="col-6">
-                            <img src="assets/imgs/about-1.jpg" alt="" class="w-100 shadow-sm">
-                        </div>
-                        <div class="col-6">
-                            <img src="assets/imgs/about-2.jpg" alt="" class="w-100 shadow-sm">
-                        </div>
-                        <div class="col-12 mt-4">
-                            <p>Mi pasión por el dibujo me acercó al tatuaje hace mucho! Comencé a tatuar como hobby el año 2004, mientras estudiaba Arquitectura. Desde esa fecha seguí tatuando a amigos y conocidos, hasta el 2019 cuando decidí comenzar a tatuar de forma profesional.</p>
-                       
-                            <p>Además de las Certificaciones correspondientes, he realizado algunos cursos de especialización en Puntillismo de arrastre y Tatuajes Botánicos. Estimo que a la fecha he realizado más de 1000 tatuajes, y aunque siempre soy muy autocrítico, me siento bastante satisfecho y motivado con el trabajo que realizo día a día!</p>
-
-                            <p><b>¿Te gustaría tatuarte? Estaré encantado de escuchar tus ideas y plasmarlas en tu piel!</b>
-                            </p>
-                        </div>
-                    </div>
+                <!-- Portfolio items will be injected here by JavaScript -->
+                <div id="portfolio-gallery" class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Example of a loading state -->
+                     <div class="text-center col-span-full">Cargando proyectos...</div>
                 </div>
-            </div>              
-        </div>
-    </section>
-    <!-- End OF About Section -->
-
-    <!-- Testmonial Section -->
-    <section class="section" id="testmonial">
-        <div class="container">
-            <h6 class="section-title text-center mb-0">Testimonios</h6>
-            <h6 class="section-subtitle mb-5 text-center">¿Quieres leer muchos más testimonios? Revisa la sección Clientes Felices, en <a href="https://www.instagram.com/franco.tatuador" target="_blank">historias destacadas del Insta!</a></h6>
-            <div class="row">
-                <div class="col-md-4 my-3 my-md-0">
-                    <div class="card">
-                        <div class="card-body">
-                            <div class="media align-items-center mb-3">
-                                <img class="mr-3" src="assets/imgs/avatar.jpg" alt="">
-                                <div class="media-body">
-                                    <h6 class="mt-1 mb-0">Maijo Campos</h6>
-                                    <small class="text-muted mb-0">@maijo.campos</small>     
-                                </div>
-                            </div>
-                            <p class="mb-0">"Amo mi tatuaje, gracias @franco.tatuador"</p>
-                            <div>
-                                <img class="capture" src="assets/imgs/av1.jpeg" alt="">
-                            </div>
-                        </div>
-                    </div>
+                 <div class="text-center mt-12">
+                     <a href="https://www.instagram.com/puntofinalchile" target="_blank" class="text-slate-800 font-semibold border-b-2 border-slate-800 hover:text-slate-600 hover:border-slate-600 transition">Ver más en Instagram &rarr;</a>
+                 </div>
+            </div>
+        </section>
+        
+        <!-- Testimonials Section -->
+        <section id="testimonials" class="py-20 md:py-28">
+            <div class="container mx-auto max-w-7xl px-6">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-4xl font-bold tracking-tight text-slate-900">Lo que dicen nuestros clientes</h2>
                 </div>
-                <div class="col-md-4 my-3 my-md-0">
-                    <div class="card">
-                        <div class="card-body">
-                            <div class="media align-items-center mb-3">
-                                <img class="mr-3" src="assets/imgs/avatar-1.jpg" alt="">
-                                <div class="media-body">
-                                    <h6 class="mt-1 mb-0">Maritza Linares</h6>
-                                    <small class="text-muted mb-0">@maritzalinareslo</small>      
-                                </div>
-                            </div>
-                            <p class="mb-0">"Muchas gracias por este gran trabajo @franco.tatuador"</p>
-                            <div>
-                                <img class="capture" src="assets/imgs/av2.jpeg" alt="">
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 my-3 my-md-0">
-                    <div class="card">
-                        <div class="card-body">
-                            <div class="media align-items-center mb-3">
-                                <img class="mr-3" src="assets/imgs/avatar-2.jpg" alt="">
-                                <div class="media-body">
-                                    <h6 class="mt-1 mb-0">América Valdés</h6>
-                                    <small class="text-muted mb-0">@she.is.america</small>        
-                                </div>
-                            </div>
-                            <p class="mb-0">"Eres muy seco, es como si hubiera pegado la fotito de mi bebé."</p>
-                            <div>
-                                <img class="capture" src="assets/imgs/av3.jpeg" alt="">
-                            </div>
-                        </div>
-                    </div>
+                <!-- Testimonials will be injected here -->
+                <div id="testimonial-cards" class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                     <!-- Example of a loading state -->
+                     <div class="text-center col-span-full">Cargando testimonios...</div>
                 </div>
             </div>
-        </div>
-    </section>
-    <!-- End of Testmonial Section -->
+        </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="section has-img-bg pb-0">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-md-5 my-3">
-                    <p>Para tus cotizaciones y agenda, la comunicación más expedita es un mensaje de Instagram!
-                        <br>
-                    Si lo prefieres, también puedes escribirnos mediante el formulario de contacto.
-                    </p>
 
-                    <h6 class="mb-0">Instagram</h6>
-                    <p class="mb-4"><a href="https://www.instagram.com/franco.tatuador" target="_blank">@franco.tatuador</a></p>
-
-                    <h6 class="mb-0">Dirección</h6>
-                    <p class="mb-4">Avenida Portugal 1322, Santiago, Chile.</p>
-
-                    <h6 class="mb-0">Email</h6>
-                    <p class="mb-0">gfrancoarquitecto@gmail.com</p>
-                    <p></p>
+        <!-- Contact Section -->
+        <section id="contact" class="bg-slate-800 text-white">
+             <div class="container mx-auto max-w-4xl px-6 py-20 text-center">
+                <h2 class="text-3xl md:text-4xl font-bold tracking-tight">¿Listo para tu próximo gran proyecto?</h2>
+                <p class="mt-4 text-lg text-slate-300 max-w-2xl mx-auto">La mejor forma de empezar es a través de Instagram. Escríbenos para contarnos tu idea, cotizar y agendar una consulta.</p>
+                <div class="mt-10">
+                     <a href="https://www.instagram.com/puntofinalchile" target="_blank" class="bg-white text-slate-900 px-8 py-4 rounded-lg font-bold text-lg hover:bg-slate-200 transition">Contactar por Instagram</a>
                 </div>
-                <div class="col-md-7">
-                    <form action="https://formspree.io/f/xpznyopo" method="post">
-                        <h4 class="mb-4">Contáctanos!</h4>
-                        <div class="form-row">
-                            <div class="form-group col-sm-4">
-                                <input type="text" class="form-control text-white rounded-0 bg-transparent" name="name" placeholder="Nombre">
-                            </div>
-                            <div class="form-group col-sm-4">
-                                <input type="email" class="form-control text-white rounded-0 bg-transparent" name="Email" placeholder="Email">
-                            </div>
-                            <div class="form-group col-sm-4">
-                                <input type="text" class="form-control text-white rounded-0 bg-transparent" name="subject" placeholder="Asunto">
-                            </div>
-                            <div class="form-group col-12">
-                                <textarea name="message" id="" cols="30" rows="4" class="form-control text-white rounded-0 bg-transparent" placeholder="Mensaje"></textarea>
+             </div>
+        </section>
 
-                            </div>
-                            <div class="form-group col-12 mb-0">
-                                <button type="submit" class="btn btn-primary rounded w-md mt-3">Enviar</button>
-                            </div>                          
-                        </div>                          
-                    </form>
-                </div>
-            </div>
-            <!-- Page Footer -->
-            <footer class="mt-5 py-4 border-top border-secondary">
-                <p class="mb-0 small">&copy; <script>document.write(new Date().getFullYear())</script>, Site Developed by <a href="https://gfrancoarq.github.io/personal-portfolio/" target="_blank">GFranco.</a> </p>     
-                <p class="mb-0 small">&copy; <script>document.write(new Date().getFullYear())</script>, LeadMark Template Created By <a href="https://www.devcrud.com" target="_blank">DevCrud.</a>  All rights reserved </p>     
-            </footer>
-            <!-- End of Page Footer -->  
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-slate-400">
+        <div class="container mx-auto max-w-7xl px-6 py-12 text-center">
+             <p class="font-bold text-white text-lg">Punto Final Tattoo Studio</p>
+             <p class="mt-2">Arte, profesionalismo y compromiso en cada tatuaje.</p>
+             <div class="mt-4">
+                 <a href="https://gfrancoarq.github.io/tattoo-studio/tyc.html" target="_blank" class="hover:text-white transition">Términos y Condiciones</a>
+             </div>
+             <p class="mt-8 text-sm">&copy; <span id="currentYear"></span> Punto Final Tattoo Studio. Todos los derechos reservados.</p>
         </div>
-    </section>
-	
-	<!-- core  -->
-    <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
-    <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
+    </footer>
 
-    <!-- bootstrap 3 affix -->
-	<script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
+    <script>
+        // --- SCRIPT PARA CARGAR DATOS DINÁMICOS ---
+        
+        // Los datos que antes estaban en data.json ahora están aquí para que el código funcione.
+        // Para editar el contenido, modifica este objeto 'studioData'.
+        const studioData = {
+          "studioInfo": {
+            "name": "Punto Final Tattoo Studio",
+            "instagram": "https://www.instagram.com/puntofinalchile",
+            "contactEmail": "contacto@puntofinal.cl"
+          },
+          "portfolio": [
+            {
+              "title": "Dragón en Espalda Completa",
+              "description": "Proyecto de varias sesiones que abarca toda la espalda, con un diseño detallado de un dragón japonés.",
+              "imageUrl": "https://placehold.co/600x800/334155/f1f5f9?text=Espalda+Dragón",
+              "category": "Espalda"
+            },
+            {
+              "title": "Manga Floral y Geométrica",
+              "description": "Combinación de elementos botánicos con patrones geométricos para crear una manga completa y fluida.",
+              "imageUrl": "https://placehold.co/600x800/334155/f1f5f9?text=Manga+Floral",
+              "category": "Mangas"
+            },
+            {
+              "title": "Serpiente en la Pierna",
+              "description": "Una serpiente que envuelve la pierna desde el tobillo hasta el muslo, realizada en blackwork.",
+              "imageUrl": "https://placehold.co/600x800/334155/f1f5f9?text=Pierna+Serpiente",
+              "category": "Piernas"
+            },
+            {
+              "title": "Pecho Ornamental",
+              "description": "Diseño simétrico que cubre la zona del pecho con detalles ornamentales y de puntillismo.",
+              "imageUrl": "https://placehold.co/600x800/334155/f1f5f9?text=Pecho+Ornamental",
+              "category": "Pecho"
+            },
+            {
+              "title": "Mitología en el Muslo",
+              "description": "Representación de una escena mitológica con múltiples personajes, cubriendo gran parte del muslo.",
+              "imageUrl": "https://placehold.co/600x800/334155/f1f5f9?text=Muslo+Mitología",
+              "category": "Piernas"
+            },
+            {
+              "title": "Tigre Realista",
+              "description": "Retrato realista de un tigre en el antebrazo, parte de un proyecto de manga animal.",
+              "imageUrl": "https://placehold.co/600x800/334155/f1f5f9?text=Tigre+Antebrazo",
+              "category": "Mangas"
+            }
+          ],
+          "testimonials": [
+            {
+              "quote": "El nivel de detalle y profesionalismo es increíble. Franco captó mi idea para la espalda completa a la perfección. Todo el proceso con Mariela fue súper claro. ¡100% recomendados!",
+              "clientName": "Javier R."
+            },
+            {
+              "quote": "Tenía miedo de empezar un proyecto tan grande como una manga, pero el equipo de Punto Final me dio toda la confianza. El resultado superó todas mis expectativas. Son secos.",
+              "clientName": "Valentina S."
+            },
+            {
+              "quote": "Desde la primera consulta hasta la última sesión, una experiencia impecable. Si buscan hacer un tatuaje grande y de calidad, este es el lugar. Gracias por todo.",
+              "clientName": "Martín C."
+            }
+          ]
+        };
 
-    <!-- Isotope -->
-    <script src="assets/vendors/isotope/isotope.pkgd.js"></script>
+        // Función para cargar los datos del portafolio y testimonios
+        function loadStudioData() {
+            try {
+                // Usamos el objeto local studioData en lugar de fetch
+                populatePortfolio(studioData.portfolio);
+                populateTestimonials(studioData.testimonials);
 
-    <!-- LeadMark js -->
-    <script src="assets/js/leadmark.js"></script>
+            } catch (error) {
+                console.error("Error al procesar los datos del estudio:", error);
+                // Mostrar error en la UI
+                document.getElementById('portfolio-gallery').innerHTML = '<p class="text-red-500 col-span-full text-center">Error al cargar los proyectos.</p>';
+                document.getElementById('testimonial-cards').innerHTML = '<p class="text-red-500 col-span-full text-center">Error al cargar los testimonios.</p>';
+            }
+        }
 
+        // Función para poblar la galería del portafolio
+        function populatePortfolio(portfolioItems) {
+            const gallery = document.getElementById('portfolio-gallery');
+            gallery.innerHTML = ''; // Limpiar el estado de carga
+
+            portfolioItems.forEach(item => {
+                const galleryItem = document.createElement('div');
+                galleryItem.className = 'gallery-item bg-white rounded-lg overflow-hidden shadow-md';
+                
+                galleryItem.innerHTML = `
+                    <img src="${item.imageUrl}" alt="${item.title}" class="w-full h-80 object-cover" onerror="this.onerror=null;this.src='https://placehold.co/600x800/222/fff?text=Error';">
+                    <div class="p-5">
+                        <h3 class="font-bold text-xl text-slate-900">${item.title}</h3>
+                        <p class="text-slate-600 mt-2">${item.description}</p>
+                    </div>
+                `;
+                gallery.appendChild(galleryItem);
+            });
+        }
+        
+        // Función para poblar las tarjetas de testimonios
+        function populateTestimonials(testimonialItems) {
+            const testimonialsContainer = document.getElementById('testimonial-cards');
+            testimonialsContainer.innerHTML = ''; // Limpiar el estado de carga
+            
+            testimonialItems.forEach(item => {
+                const card = document.createElement('div');
+                card.className = 'bg-white p-6 rounded-lg shadow-md';
+                
+                card.innerHTML = `
+                    <p class="text-slate-700 italic">"${item.quote}"</p>
+                    <div class="mt-4 font-semibold text-slate-900">${item.clientName}</div>
+                `;
+                testimonialsContainer.appendChild(card);
+            });
+        }
+
+
+        // --- SCRIPTS GENERALES ---
+        
+        // Ejecutar la carga de datos cuando el DOM esté listo
+        document.addEventListener('DOMContentLoaded', loadStudioData);
+
+        // Script para el año actual en el footer
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+    </script>
 </body>
 </html>
+
